@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrola</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesmodal.css">
+
+</head>
+
+<body>
+
+    <!---Homepage-->
+
+    <div class="container-fluid main bg-homepage texto branco">
+        <div class="container">
+            <div class=" d-flex row col-12">
+                <h1 class="logomain centrar">EnRoLa</h1>
+                <h1 class="titulo1 base mt-3">Game Masters</h1>
+                <h3 class="titulo2 base">ao seu dispor</h3>
+                <h4 class="titulo3 mt-3">Inicia aqui a tua aventura</h4>
+
+             <!--1st Modal-->
+                <div class="d-flex justify-content-center col-6">
+                    <a data-bs-toggle="modal" href="#myModal" class="btn btn-outline-light btn-sm m-2 titulo3 opacity">Evento Privado</a>
+
+                    <div class="modal" id="myModal">
+	                    <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header text-dark modtit">
+                                    <h4 class="modal-title">EnRoLa</h4>    
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <img src="Images/evento_privado.png" class="img-fluid rounded evento" alt="evento privado">
+                                    </div>
+                        
+                                    <div class="col-12 mt-4 sobre">
+                                        <p class="mt-3"><span class="text-center">Partilhe Aventuras Épicas com os Seus Amigos em Sessões de D&D!</span>
+                                            <br></br>
+                                            Reúna os seus amigos e mergulhem juntos num mundo de fantasia. Enfrentem criaturas míticas e desvendem mistérios enquanto criam histórias inesquecíveis.Descubram a magia de D&D e façam memórias únicas numa experiência envolvente e emocionante!
+                                            </p>
+                                    </div>
+
+                                    <div class=" d-flex justify-content-center align-self-end mt-3">
+                                        <a data-bs-toggle="modal" href="#myModal4" class="btn btn-primary">Marcar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                  <!---2nd Modal-->
+                <div class="d-flex justify-content-center col-6">
+                    <a data-bs-toggle="modal" href="#myModal3" class="btn btn-outline-light btn-sm m-2 titulo3 opacity">Evento Corporate</a>
+
+                    <div class="modal" id="myModal3">
+	                    <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header text-dark modtit">
+                                    <h4 class="modal-title">EnRoLa</h4>    
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <img src="Images/evento_corporate.jfif" class="img-fluid rounded evento" alt="evento corporate">
+                                    </div>
+                        
+                                    <div class="col-12 mt-4 sobre">
+                                        <p class="mt-3"><span class="text-center">Liberte a Criatividade da Equipa com Sessões de D&D Corporativas!</span>
+                                        <br></br>
+                                         Mergulhe num mundo de aventura e colaboração, onde os colaboradores se tornam heróis, planeiam juntos e resolvem desafios num ambiente imersivo, divertido e envolvente. Perfeito para fomentar a criatividade, melhorar a comunicação e fortalecer os laços dentro da equipa.
+                                        </p>
+                                    </div>
+                                    <div class=" d-flex justify-content-center align-self-end mt-3"><a data-bs-toggle="modal" href="#myModal4" class="btn btn-primary">Marcar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <!---2.1 Modal-->
+
+                    <div class="modal" id="myModal4" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body">
+                                    <div class="mt-2">
+                                    
+                                        <form action="Messages.php" method="POST" class="row g-3 d-flex">
+                                            <div class="col-md-6">
+                                                <label for="nome" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="nome" name="nome" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="Email" name="email" required>
+                                            </div>
+                                            <div class="col-12 d-flex row-reverse ">
+                                                <div class="form-check">
+                                                    <input type="radio" name="yes_or_no" id="eventoPrivado" value="Evento Privado" required>
+                                                    <label for="eventoPrivado"> Evento Privado </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="radio" name="yes_or_no" id="eventoCorporate" value="Evento Corporate" required>
+                                                    <label for="eventoCorporate"> Evento Corporate </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">Campanha a jogar</label>
+                                                <select id="inputState" class="form-select" name="campanha" required>
+                                                    <option value="" selected disabled>Escolher uma das opções</option>
+                                                    <option value="Campanha XYZ1">Campanha XYZ1</option>
+                                                    <option value="Campanha XYZ2">Campanha XYZ2</option>
+                                                    <option value="Campanha XYZ3">Campanha XYZ3</option>
+                                                    <option value="Campanha XYZ4">Campanha XYZ4</option>
+                                                </select>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="informacoes_adicionais" required></textarea>
+                                            </div>
+                                            <div class=" d-flex justify-content-center "><a data-bs-toggle="modal" href="#myModal211" class="btn btn-primary">Enviar Pedido</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---2.1.1 Modal-->
+
+                <div class="modal" id="myModal211" data-bs-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">EnRoLa</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="container"></div>
+                            <div class="modal-body d-flex justify-content-center">
+                                <div class=" mt-4 text-center ">
+                                    <img src="Images/d20.webp" class="rounded-img road"></img>
+                                    <div class="titulo1 mt-4">Pedido Enviado com Sucesso</div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <!--3 Modal-->
+
+                <div class="d-flex col-12 justify-content-center">
+                    <a data-bs-toggle="modal" href="#myModal5" class="btn btn-outline-light btn-sm m-2 titulo3 opacity">Estou somente a ver</a>
+
+                    <div class="modal" id="myModal5">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header text-dark modtit">
+                                    <h4 class="modal-title">EnRoLa</h4>    
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body mt-4 cavalo">
+                                    <p> Só a ver... 
+                                    <br></br> Hmm hmm...
+                                    <br></br>
+                                    Eu acho que está é na altura de assumir esse desejo que está aí por aventura, pelo mistério e pelo suspense.
+                                    Vá, anda lá, já estás no sítio certo e tudo. 
+                                    <br></br>
+                                    Até te podemos dar um cheirinho do que podes ter com um Game Master da ENROLA:
+                                        
+                                    </p>
+                                    <div class="d-flex flex-column align-items-center mt-4">
+                                        <a data-bs-toggle="modal" href="#myModal51" class="btn btn-primary m-2 col-6">Quero Experimentar!</a>
+                                        <a data-bs-toggle="modal" href="#myModal52" class="btn btn-primary m-2 col-6">Epá, não...</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1 Modal-->
+
+                    <div class="modal" id="myModal51" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-3">
+                                    <img src="Images/forest.jpg" class="rounded-img"></img>
+                                    <p>Estás numa floresta escura. A lua cheia brilha através das árvores, lançando sombras inquietantes no chão. De repente, ouves um som de galhos a quebrar à tua esquerda. O que fazes?</p>
+                                    <div class="d-flex flex-column align-items-center mt-2">
+                                        <a data-bs-toggle="modal" href="#myModal511" class="btn btn-primary m-2 col-6">Seguir o som</a>
+                                        <a data-bs-toggle="modal" href="#myModal512" class="btn btn-primary m-2 col-6">Ficar parado e ouvir</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1 Modal-->
+
+                    <div class="modal" id="myModal511" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-2">
+                                    <p>Segues o som e chegas a uma clareira onde uma figura encapuzada está a mexer num pequeno saco de couro. Quando te aproximas, a figura levanta a cabeça e diz: 'Finalmente chegaste, aventureiro. Estava à tua espera. Preciso da tua ajuda numa missão perigosa.'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-2">
+                                    <a data-bs-toggle="modal" href="#myModal5111" class="btn btn-primary m-2 col-6">Perguntar quem é a figura</a>
+                                    <a data-bs-toggle="modal" href="#myModal5112" class="btn btn-primary m-2 col-6">Aceitar a missão sem hesitar</a>
+                                    <a data-bs-toggle="modal" href="#myModal5113" class="btn btn-primary m-2 col-6">Perguntar sobre o que há no saco</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.2 Modal-->
+
+                    <div class="modal" id="myModal512" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-4">
+                                    <p>Ficas parado e ouves atentamente. O som dos galhos a quebrar aproxima-se cada vez mais. De repente, uma figura encapuzada aparece à tua frente. 'Ah, pensei que nunca mais chegavas' diz a figura. 'Preciso da tua ajuda numa missão perigosa.'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-3">
+                                    <a data-bs-toggle="modal" href="#myModal5111" class="btn btn-primary m-2 col-6">Perguntar quem é a figura</a>
+                                    <a data-bs-toggle="modal" href="#myModal5112" class="btn btn-primary m-2 col-6">Aceitar a missão sem hesitar</a>
+                                    <a data-bs-toggle="modal" href="#myModal5113" class="btn btn-primary m-2 col-6">Perguntar sobre o que há no saco</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.1 (Perguntar sobre a Figura) Modal-->
+
+                    <div class="modal" id="myModal5111" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo">
+                                    <img src="Images/hooded_figure.jpg" class="rounded-img"></img>
+                                    <p>'Eu sou o Guardião das Aventuras, e estou aqui para guiar aventureiros como tu. Estás pronto para continuar?'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <a data-bs-toggle="modal" href="#myModal51111" class="btn btn-primary m-1 col-6">Sim, estou pronto</a>
+                                    <a data-bs-toggle="modal" href="#myModal51112" class="btn btn-primary m-1 col-6">Perguntar mais sobre a missão</a>
+                                    <a data-bs-toggle="modal" href="#myModal51113" class="btn btn-primary m-1 col-6">Recusar e sair da clareira</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.2 (Aceitar a Missão) Modal-->
+
+                    <div class="modal" id="myModal5112" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-2">
+                                    <img src="Images/hooded_figure.jpg" class="rounded-img"></img>
+                                    <p>'Excelente! Eu sou o Guardião das Aventuras, e estou aqui para guiar aventureiros como tu.Estás pronto para continuar?'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-1">
+                                    <a data-bs-toggle="modal" href="#myModal5111111" class="btn btn-primary m-2 col-6">Sim, estou pronto</a>
+                                    <a data-bs-toggle="modal" href="#myModal51112" class="btn btn-primary m-2 col-6">Perguntar mais sobre a missão</a>
+                                    <a data-bs-toggle="modal" href="#myModal51113" class="btn btn-primary m-2 col-6">Recusar e sair da clareira</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.3 (Perguntar sobre o que há no saco) Modal-->
+
+                    <div class="modal" id="myModal5113" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-4">
+                                    <img src="Images/forest.jpg" class="rounded-img"></img>
+                                    <p>'Este saco contém mapas e ferramentas para te ajudar na tua missão. Eu sou o Guardião das Aventuras, e estou aqui para guiar aventureiros como tu. Estás pronto para continuar?'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-1">
+                                    <a data-bs-toggle="modal" href="#myModal5111111" class="btn btn-primary m-2 col-6">Sim, estou pronto</a>
+                                    <a data-bs-toggle="modal" href="#myModal51112" class="btn btn-primary m-2 col-6">Perguntar mais sobre a missão</a>
+                                    <a data-bs-toggle="modal" href="#myModal51113" class="btn btn-primary m-2 col-6">Recusar e sair da clareira</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.1.1 (Sim, estou pronto) Modal-->
+
+                    <div class="modal" id="myModal51111" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-2">
+                                    <img src="Images/medieval_road.jpeg" class="rounded-img road"></img>
+                                    <p>O Guardião entrega-te o saco e aponta para uma estrada que leva às montanhas ao longe. 'Segue este caminho até encontrares a antiga ponte de pedra. Boa sorte, aventureiro.'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <a data-bs-toggle="modal" href="#myModal5111111" class="btn btn-primary m-2 col-6">Seguir a estrada</a>
+                                    <a data-bs-toggle="modal" href="#myModal511112" class="btn btn-primary m-2 col-6">Decidir explorar a floresta em vez disso</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.1.2 (Perguntar mais sobre a missão) Modal-->
+
+                    <div class="modal" id="myModal51112" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-4">
+                                    <p>'Claro, aventureiro. Precisarás de atravessar a antiga ponte de pedra e enfrentar desafios ao longo do caminho até chegares ao castelo nas colinas. A tua missão é libertar a vila de criaturas malignas que lá se escondem. Estás pronto para continuar?'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-3">
+                                    <a data-bs-toggle="modal" href="#myModal5111111" class="btn btn-primary m-2 col-6">Seguir a estrada</a>
+                                    <a data-bs-toggle="modal" href="#myModal511112" class="btn btn-primary m-2 col-6">Decidir explorar a floresta em vez disso</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.1.3 (Recusar e sair da clareira) Modal-->
+
+                    <div class="modal" id="myModal51113" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-4">
+                                    <p>Decides que esta missão não é para ti e voltas para a floresta. No entanto, ouves uma voz sussurrando no ar: 'Volta quando estiveres pronto para uma verdadeira aventura, jovem aventureiro</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-3">
+                                    <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Voltar mais tarde</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.1.1.2 (Decidir explorar a floresta em vez disso) Modal-->
+
+                    <div class="modal" id="myModal511112" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-4">
+                                    <p>Decides que esta missão não é para ti e voltas para a floresta. No entanto, ouves uma voz sussurrando no ar: 'Volta quando estiveres pronto para uma verdadeira aventura, jovem aventureiro'</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mt-3">
+                                    <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar mais tarde</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3.1.1.1.1.1.1 (Modal Final) Modal-->
+
+                    <div class="modal" id="myModal5111111" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class="modal-body d-flex row  justify-content-center cavalo mt-4">
+                                    <img src="Images/goblins.jpg" class="rounded-img"></img>
+                                    <p>Chegas à ponte de pedra antiga. O rio abaixo corre furiosamente. Na outra margem, vês vários cadáveres e  cerca de 30 goblins a guardar a passagem. Eles não parecem amigáveis. Decides que talvez sejam necessários mais aventureiros para cumprir as missões do Guardião.</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center mb-3">
+                                    <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Procurar ajuda</a>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+
+                <!--3.2 Modal-->
+
+                    <div class="modal" id="myModal52" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">EnRoLa</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="container"></div>
+                                <div class=" d-flex row modal-body justify-content-center">
+                                    <div class="ml-3 mt-3">
+                                    <p>Já percebi, não és destas coisas, és só muito curioso... </p>
+                                    <p>Bem, nesse caso a nossa recomendação para ti é outra...</p>
+                                    <p>Deixamos aqui em baixo os links para as nossas redes sociais, onde poderás ficar a saber mais sobre a ENROLA, os nossos Game Masters, a nossa comunidade e actividades.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-around">
+                                        <i class="bi bi-instagram fa-2x"></i>
+                                        <i class="bi bi-discord fa-2x"></i>
+                                    </div>
+                                    <p class="mt-4 text-center">Vá, vai lá cuscar!</p>
+                                    <div class=" d-flex justify-content-left align-self-end mt-3">
+                                        <a data-bs-toggle="modal" href="#myModal5" class="btn btn-primary">Voltar atrás</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Voltar ao Início</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex centrar">
+                <div class="popup branco" style=" line-height:100%">
+                    <p class="p-1">Junta-te à nossa comunidade de D&D no Discord!</p>
+                    <p class="m-2"> 🏰 Ambiente Amigável e Inclusivo 🏰</p>
+                        <p> 🎲 Jogos e Eventos Regulares 🎲</p>
+                   
+                    
+                    <div class="iconright d-flex justify-content-center m-2">
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class=" bi bi-discord fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+    function openMyModal2() {
+        let myModal = new bootstrap.Modal(document.getElementById('myModal2'), {});
+        myModal.show();
+    }
+
+    function openMyModal4() {
+        let myModal3 = new bootstrap.Modal(document.getElementById('myModal4'), {});
+        myModal.show();
+    }
+
+    function openMyModal51() {
+        let myModal5 = new bootstrap.Modal(document.getElementById('myModal51'), {});
+        myModal.show();
+    }
+
+    function openMyModal52() {
+        let myModal51 = new bootstrap.Modal(document.getElementById('myModal52'), {});
+        myModal.show();
+    }
+
+    function openMyModal511() {
+        let myModal51 = new bootstrap.Modal(document.getElementById('myModal511'), {});
+        myModal.show();
+    }
+
+    function openMyModal512() {
+        let myModal51 = new bootstrap.Modal(document.getElementById('myModal512'), {});
+        myModal.show();
+    }
+
+    function openMyModal5111() {
+        let myModal511 = new bootstrap.Modal(document.getElementById('myModal5111'), {});
+        myModal.show();
+    }
+
+    function openMyModal5112() {
+        let myModal511 = new bootstrap.Modal(document.getElementById('myModal5112'), {});
+        myModal.show();
+    }
+
+    function openMyModal5113() {
+        let myModal511 = new bootstrap.Modal(document.getElementById('myModal5113'), {});
+        myModal.show();
+    }
+    function openMyModal51111() {
+        let myModal5111 = new bootstrap.Modal(document.getElementById('myModal51111'), {});
+        myModal.show();
+    }
+
+    function openMyModal51112() {
+        let myModal5111 = new bootstrap.Modal(document.getElementById('myModal51112'), {});
+        myModal.show();
+    }
+
+    function openMyModal51113() {
+        let myModal5111 = new bootstrap.Modal(document.getElementById('myModal51113'), {});
+        myModal.show();
+    }
+    
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    document.body.appendChild(overlay);
+
+    overlay.style.display = 'block';
+
+    setTimeout(function() {
+        var popups = document.querySelectorAll('.popup');
+        popups.forEach(function(popup) {
+            popup.style.display = 'block';
+            popup.style.opacity = '1';
+            popup.style.transition = 'opacity 0.1s ease-in-out';
+        });
+    }, 3000);
+
+    var closeButtons = document.querySelectorAll('.close, .x');
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function(popup) {
+                popup.style.display = 'none';
+            });
+            document.body.removeChild(overlay);
+        });
+    });
+});
+</script>
+
+    </script>
+    </html>
